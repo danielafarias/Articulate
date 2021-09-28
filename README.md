@@ -1,34 +1,129 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ARTICULATE
 
-## Getting Started
+![GitHub repo size](https://img.shields.io/github/repo-size/danielafarias/Articulate?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/danielafarias/Articulate?style=for-the-badge)
+![GitHub forks](https://img.shields.io/chocolatey/dt/Articulate?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/danielafarias/Articulate?style=for-the-badge)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/danielafarias/Articulate?style=for-the-badge)
+![Github Watchers](https://img.shields.io/github/watchers/danielafarias/Articulate?style=for-the-badge)
 
-First, run the development server:
+![articulate](public/img/pen.svg)
 
-```bash
-npm run dev
-# or
-yarn dev
+
+> Articulate é uma aplicação onde o usuário pode escrever livremente, expressando-se, publicando artículos, notícias e variados. JavaScript, HTML, CSS, Next.js, Material-UI, Axios e Draft.js.
+
+### 🧡 Ajustes e melhorias
+
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+
+- [x] Projeto inicializado
+- [ ] Components
+- [ ] Views
+- [ ] Styles
+- [ ] Projeto Finalizado
+
+## 💻 Pré-requisitos
+
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+
+* Você instalou a versão mais recente de `<Yarn>`
+* Você adicionou as seguintes bibliotecas  `<Axios / Material-UI>`.
+* Você leu o `<passo_a_passo_de_intalação_do_projeto>`.
+
+## 📰 Instalando `<Articulate>`
+
+Para instalar o `<Articulate>`, siga estas etapas:
+
+Caso não possua o Yarn, instale o Node.js em seu site oficial:
+
+[Node.js](https://nodejs.org/en/download/)
+
+e:
+
+```
+<npm install --global yarn>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Clone o projeto:
+```
+<git clone https://github.com/danielafarias/Articulate.git>
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Em seguida, adicione as bibliotecas e dependências necessárias:
+```
+<cd Articulate>
+```
+```
+<yarn install>
+```
+```
+<yarn add @mui/material>
+```
+```
+<yarn add axios>
+```n add @material-ui/icons>
+```
+```
+<yarn add react>
+```
+```
+<yarn add react-dom>
+```
+```
+<yarn add next>
+```
+```
+<yarn add draft-js>
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 🖋 Usando `<Articulate>`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Para usar `<Articulate>`:
 
-## Learn More
+```
+<yarn dev>
+```
 
-To learn more about Next.js, take a look at the following resources:
+Voilà!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[http://localhost:3000](http://localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 🗞 Contribuindo para `<Articulate>`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Para contribuir com `<Articulate>`, siga estas etapas:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Bifurque este repositório.
+2. Crie um branch: `git checkout -b <articulate_seu_nome>`.
+3. Faça suas alterações e confirme-as: `git commit -m '<sua_mensagem_de_commit>'`
+4. Envie para o branch original: `git push origin <master> / <https://github.com/danielafarias/Articulate>`
+5. Crie a solicitação de pull.
+
+Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+## 🤝 Colaboradores
+
+Seguintes pessoas que contribuíram para este projeto:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/danielafarias">
+        <img src="https://avatars.githubusercontent.com/u/79869120?v=4" width="100px;" alt="Foto da Daniela Farias no GitHub"/><br>
+        <sub>
+          <b>Daniela Farias</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+## 📝 Licença
+
+Esse projeto está sob licença ⚖️. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+
+[⬆ Voltar ao topo](#articulate)<br>
+
+```
+© README.md template by iuricode
+```
