@@ -60,9 +60,12 @@ Em seguida, adicione as bibliotecas e dependências necessárias:
 <yarn add @mui/material>
 ```
 ```
-<yarn add axios>
-```n add @material-ui/icons>
+<yarn add @mui/icons-material>
 ```
+```
+<yarn add axios>
+```
+
 ```
 <yarn add react>
 ```
