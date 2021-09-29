@@ -7,10 +7,10 @@
 ![GitHub Last Commit](https://img.shields.io/github/last-commit/danielafarias/Articulate?style=for-the-badge)
 ![Github Watchers](https://img.shields.io/github/watchers/danielafarias/Articulate?style=for-the-badge)
 
-![articulate](public/img/pen.svg)
+![articulate](public/newspaper2.svg)
 
 
-> Articulate é uma aplicação onde o usuário pode escrever livremente, expressando-se, publicando artículos, notícias e variados. JavaScript, HTML, CSS, Next.js, Material-UI, Axios e Draft.js.
+> Articulate é uma aplicação onde o usuário pode escrever livremente, expressando-se, publicando artículos, notícias e variados. JavaScript, HTML, CSS, Next.js, Material-UI, Axios.
 
 ### 🧡 Ajustes e melhorias
 
@@ -74,9 +74,6 @@ Em seguida, adicione as bibliotecas e dependências necessárias:
 ```
 ```
 <yarn add next>
-```
-```
-<yarn add draft-js>
 ```
 
 ## 🖋 Usando `<Articulate>`

@@ -6,13 +6,22 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-image: linear-gradient(#F7E3AF, #f2ebd9ff) ;
+  background-image: linear-gradient(#F7E3AF, #f2ebd9ff, #F7E3AF) ;
 }
 
 h1 {
   font-family: 'Pacifico', cursive;
-  color: #274b6dff;
+  color: #ff6e1dff;
   font-size: 3rem;
+  text-shadow: 4px 3px 0px #082947ff;
+}
+
+h2, h3, h4, h5, h6 {
+  color: #082947ff;
+}
+
+p {
+  color: #082947ff;
 }
 
 a {
@@ -25,7 +34,8 @@ a {
 }
 
 button.MuiButtonBase-root {
-  background-color: #274b6dff;
+  background-color: #082947ff;
+  color:#f2ebd9ff;
 }
 
 button.MuiButtonBase-root:hover {
@@ -34,4 +44,13 @@ button.MuiButtonBase-root:hover {
 
 svg.MuiSvgIcon-root {
   color: #f2ebd9ff;
+}
+
+label.MuiFormLabel-root.Mui-focused {
+  color: #082947ff;
+}
+
+
+div.MuiFilledInput-root:after  {
+  border-bottom: 2px solid #ff6e1dff;
 }

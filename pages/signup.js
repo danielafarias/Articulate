@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-export default function Home() {
+export default function SignUp() {
 
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -30,10 +30,11 @@ export default function Home() {
             spacing={3}
           >
             <Grid item>
-              <Typography variant="h5"><b>Login</b></Typography>
+              <Typography variant="h5"><b>Registrar-se</b></Typography>
             </Grid>
             <Grid item>
               <TextField
+              required
                 label="Usuário"
                 variant="filled"
                 type="text"
@@ -44,6 +45,7 @@ export default function Home() {
             </Grid>
             <Grid item>
               <TextField
+              required
                 label="Senha"
                 variant="filled"
                 type="password"
@@ -53,12 +55,7 @@ export default function Home() {
               />
             </Grid>
             <Grid item>
-              <Button type="submit">ENTRAR</Button>
-            </Grid>
-            <Grid item>
-              <Typography variant="p">
-                <a href='/forgot-password'>Esqueci a senha</a> | <a href='/signup'>Cadastre-se</a>
-              </Typography>
+              <Button type="submit">Confirmar</Button>
             </Grid>
           </Grid>
         </form>
