@@ -11,7 +11,7 @@ export default function FloatingButton(props) {
     <Box sx={{ height: 0, transform: "translateZ(0px)", flexGrow: 1 }}>
       <Fab
         aria-label="Escrever texto"
-        sx={{ position: "absolute", bottom: 16, right: 16 }}
+        sx={{ position: "absolute", right: 16, backgroundColor: "#082947ff" }}
         onClick={props.onClick}
       >
         <EditIcon />

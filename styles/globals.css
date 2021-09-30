@@ -34,8 +34,12 @@ a {
 }
 
 button.MuiButtonBase-root {
-  background-color: #082947ff;
   color:#f2ebd9ff;
+  margin: 0.5rem;
+}
+
+footer {
+  margin: 1rem 0;
 }
 
 button.MuiButtonBase-root:hover {
@@ -50,7 +54,19 @@ label.MuiFormLabel-root.Mui-focused {
   color: #082947ff;
 }
 
+div.MuiPaper-root {
+  background-color: #f2ebd9ff;
+}
 
 div.MuiFilledInput-root:after  {
   border-bottom: 2px solid #ff6e1dff;
+}
+
+div.MuiAvatar-root {
+  background-color: #ff6e1dff;
+}
+
+div.MuiCard-root {
+  max-width: 1400vh;
+  background-color: transparent;
 }

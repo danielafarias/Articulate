@@ -55,7 +55,7 @@ export default function SignUp() {
               />
             </Grid>
             <Grid item>
-              <Button type="submit">Confirmar</Button>
+              <Button sx={{ backgroundColor: "#082947ff" }} type="submit">Confirmar</Button>
             </Grid>
           </Grid>
         </form>
