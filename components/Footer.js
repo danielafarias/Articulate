@@ -5,7 +5,7 @@ export default function Footer() {
     <Grid container justifyContent="center">
       <Grid item>
         <Typography>
-          <a>&copy; 2021 danielafarias</a>
+          <a href="https://github.com/danielafarias" target="_blank" rel="noreferrer">&copy; 2021 danielafarias</a>
         </Typography>
       </Grid>
     </Grid>

@@ -6,12 +6,17 @@ import {
   DialogActions,
   DialogContent,
   DialogTitle,
+  Grid,
+  Alert
 } from "@mui/material";
 import FloatingButton from "../components/FloatingButton";
+import { post } from "../api/Api";
 
 export default function TextArea() {
   const [content, setContent] = React.useState("");
   const [open, setOpen] = React.useState(false);
+
+  const [error, setError] = React.useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -19,6 +24,18 @@ export default function TextArea() {
 
   const handleClose = () => {
     setOpen(false);
+  };
+
+  const submitHandler = async (event) => {
+    event.preventDefault();
+
+    try {
+      await post(content);
+      setOpen(false);
+    } catch (err) {
+      console.error(err);
+      setError(true);
+    }
   };
 
   return (
@@ -29,6 +46,8 @@ export default function TextArea() {
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Poste seu texto</DialogTitle>
         <DialogContent>
+      <form onSubmit={submitHandler}>
+        <Grid container direction="column" alignItems="center">
           <TextField
             label="Escreva aqui..."
             variant="filled"
@@ -42,11 +61,21 @@ export default function TextArea() {
             value={content}
             onChange={(e) => setContent(e.target.value)}
           />
-        </DialogContent>
-        <DialogActions>
+            <Grid item>
           <Button onClick={handleClose} sx={{ backgroundColor: "#082947ff" }}>Cancelar</Button>
-          <Button onClick={handleClose} sx={{ backgroundColor: "#082947ff" }}>Postar</Button>
-        </DialogActions>
+          <Button type="submit" sx={{ backgroundColor: "#082947ff" }}>Postar</Button>
+          </Grid>
+          <Grid item>
+          {error == false ? null : (
+              <Alert severity="error">
+                Erro ao postar —{" "}
+                <strong>Tente novamente!</strong>
+              </Alert>
+            )}
+            </Grid>
+          </Grid>
+      </form>
+        </DialogContent>
       </Dialog>
     </div>
   );

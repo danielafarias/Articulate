@@ -1,14 +1,35 @@
 import React from 'react';
 import Head from 'next/head';
-import { TextField, Grid, Typography, Button } from '@mui/material';
+import { TextField, Grid, Typography, Button, Alert, AlertTitle } from '@mui/material';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { login } from "../api/Api";
+import { useRouter } from "next/router";
 
 export default function Home() {
+
+  const router = useRouter();
+
+  const [error, setError] = React.useState(false);
 
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
 
+  const submitHandler = async (event) => {
+    event.preventDefault();
+
+    try {
+      await login(username, password)
+      .then((response) => {
+        localStorage.setItem('token', response.data);
+    });
+      router.push("/feed");
+    } catch (err) {
+      console.error(err);
+      setError(true);
+    }
+  };
+  
   return (
     <div>
       <Head>
@@ -20,7 +41,7 @@ export default function Home() {
       <Header />
 
       <main>
-      <form>
+      <form onSubmit={submitHandler}>
           <Grid
             container
             direction="column"
@@ -54,6 +75,13 @@ export default function Home() {
             <Grid item>
               <Button sx={{ backgroundColor: "#082947ff" }} type="submit">ENTRAR</Button>
             </Grid>
+            {error == false ? null : (
+              <Alert severity="error">
+                <AlertTitle>Erro</AlertTitle>
+                Houve um erro ao realizar o login —{" "}
+                <strong>Tente novamente!</strong>
+              </Alert>
+            )}
             <Grid item>
               <Typography variant="p">
                 <a href='/forgot-password'>Esqueci a senha</a> | <a href='/signup'>Cadastre-se</a>
