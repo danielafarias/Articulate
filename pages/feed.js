@@ -1,10 +1,21 @@
+import React from "react";
 import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import TextArea from '../components/TextArea';
 import TextCard from '../components/TextCard';
+import { feed } from "../api/Api";
 
 export default function Feed() {
+  const [feeds, setFeeds] = React.useState("");
+
+  if (!feeds) {
+    feed().then((res) => setFeeds(res));
+  }
+  const responseData = Array.from(feeds);
+
+  console.log(responseData)
+
   return (
     <div>
       <Head>
@@ -16,11 +27,10 @@ export default function Feed() {
       <Header />
 
       <main>
-        <TextArea />
-        <TextCard />
-        <TextCard />
-        <TextCard />
-        <TextCard />
+        <TextArea/>
+        {responseData.map((data) => (
+          <TextCard author={data.author.username} date={data.createdAt.replace(/(\d*)-(\d*)-(\d*).*/, '$3-$2-$1')} content={data.content}/>
+        ))}
       </main>
 
       <footer>

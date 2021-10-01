@@ -12,7 +12,8 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 
-export default function TextCard() {
+
+export default function TextCard(props) {
   const [fav, setFav] = React.useState(false);
   const [like, setLike] = React.useState(false);
 
@@ -24,6 +25,8 @@ export default function TextCard() {
     like === false ? setLike(true) : setLike(false);
   };
 
+  const author = "Autor " + props.author + " diz:"
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
@@ -32,13 +35,12 @@ export default function TextCard() {
             <AccountCircleIcon />
           </Avatar>
         }
-        title="Autor 1 diz:"
+        title={author}
+        subheader={props.date}
       />
       <CardContent>
         <Typography variant="p">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the
-          mussels, if you like.
+          {props.content}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>

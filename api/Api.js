@@ -41,10 +41,10 @@ export const post = async (
   export const feed = async () => {
     const response = await axios({
       method: "get",
-      url: baseUrl,
+      url: baseUrl + '/feeds',
       headers: {
         "Content-Type": "application/json",
-        Authorization: "menu@beeveggie.com",
+        Authorization: 'Bearer ' + localStorage.getItem('token'),
       },
     });
   
