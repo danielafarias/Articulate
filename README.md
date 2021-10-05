@@ -7,7 +7,7 @@
 ![GitHub Last Commit](https://img.shields.io/github/last-commit/danielafarias/Articulate?style=for-the-badge)
 ![Github Watchers](https://img.shields.io/github/watchers/danielafarias/Articulate?style=for-the-badge)
 
-![articulate](public/newspaper2.svg)
+![articulate](public/articulate-logo.png)
 
 
 > Articulate é uma aplicação onde o usuário pode escrever livremente, expressando-se, publicando artículos, notícias e variados. JavaScript, HTML, CSS, Next.js, Material-UI, Axios.
@@ -17,10 +17,10 @@
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [x] Projeto inicializado
-- [ ] Components
-- [ ] Views
-- [ ] Styles
-- [ ] Projeto Finalizado
+- [x] Components
+- [x] Views
+- [x] Styles
+- [x] Projeto Finalizado
 
 ## 💻 Pré-requisitos
 
